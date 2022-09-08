@@ -28,7 +28,7 @@
                     <div class="card">
                         <div class="card-header">
                             <div class="d-flex justify-content-between">
-                                <h3 style="color:black;"><span> <b> Listap de Recoleccion</b> </span></h3>
+                                <h3 style="color:black;"><span> <b> Lista de Recoleccion</b> </span></h3>
                                 <a href="AddRecoleccion.php" style="height: 50%;" class="btn btn-success">Nueva Recoleccion</a>
                             </div>
                         </div>
