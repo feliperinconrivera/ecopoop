@@ -27,7 +27,7 @@
                     <div class="card">
                         <div class="card-header">
                             <div class="d-flex justify-content-between">
-                                <h1>Nueva Planilla</h1>
+                            <h3 style="color:black;"><span> <b>Nueva Planilla</b> </span></h3>
                                 <a href="../view/Planilla.php" style="height: 50%;" class="btn btn-success">Regresar</a>
                             </div>
                         </div>
@@ -35,7 +35,7 @@
                             <div id="error"></div>
                             <form action="" method="POST">
 
-                                <div class="row">
+                                <div class="row" style="color:black;">
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>Fecha Y Hora:</label>

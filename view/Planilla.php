@@ -34,10 +34,49 @@
 
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table id="" style="width:100%; color:black;" class="table table-hover table-bordered display">
+                                <table id="DataTable" style="width:100%; color:black;" class="table table-hover table-bordered display">
+
+                                <thead>
+										<th>#</th>
+										<th>Fecha</th>
+										<th>Tipo de Residuos:</th>
+										<th>INFEC:</th>
+										<th>Numero de Bolsas:</th>
+										<th>Peso en Kg:</th>
+										<th>Conductor:</th>
+										<th>Entrego:</th>
+										<th>Total kg:</th>
+										<th>Editar</th>
+										<th>Eliminar</th>
+									</thead>
+                                    
+									<tbody>
+										
+											<tr>
+												<td>1</td>
+												<td>2022/08/03</td>
+												<td>Escremento de Mascotas</td>
+												<td>x</td>
+												<td>150</td>
+												<td>150</td>
+												<td>felipe</td>
+												<td>juan</td>
+												<td>100</td>
+												<td>
+													<a href="" class="btn btn-success">Editar</a>
+												</td>
+												<td>
+													<a href="" class="btn btn-danger">Eliminar</a>
+												</td>
+											</tr>
+										
+									</tbody>
+
+                                    </table>
 
 
-                                    <tbody>
+                                    <!-- <tbody>
+                                        
                                         <th>Fecha y Hora:</th>
                                         <td>2022/08/03</td>
                                         <td> 09:30</td>
@@ -85,9 +124,9 @@
                                         <div class="form-group">
                                             <a href="" class="btn btn-danger col-md-12">Eliminar</a>
                                         </div>
-                                    </div>
+                                    </div>-->
                                 </div>
-                            </div>
+                            </div> 
                         </div>
                     </div>
                 </div>

@@ -50,7 +50,7 @@ $Unidad = $controladorUnidad->buscarUnidad($_GET['id']);
                                                 <input value="<?php echo $Unidad[0]['direccion']; ?>" required id="direccion" name="direccion" class="form-control" type="text" placeholder="">
                                             </div>
                                         </div>
-                                    
+
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="descripcion">Descripcion:</label>
@@ -78,14 +78,14 @@ $Unidad = $controladorUnidad->buscarUnidad($_GET['id']);
                                                 <input value="<?php echo $Unidad[0]['nombre_administrador']; ?>" required id="nombre_administrador" name="nombre_administrador" class="form-control" type="text" placeholder="">
                                             </div>
                                         </div>
-                                        
+
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="rut">RUT:</label>
                                                 <input value="<?php echo $Unidad[0]['rut']; ?>" required id="rut" name="rut" class="form-control" type="text" placeholder="">
                                             </div>
                                         </div>
-                                        
+
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="documento">Documento:</label>

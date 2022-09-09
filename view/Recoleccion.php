@@ -77,6 +77,10 @@
                                             <td>0</td>
                                         </tr>
                                         <tr>
+                                            <th scope="row">Fotos</th>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
                                             <th scope="row">Novedades</th>
                                             <td>Ninguna</td>
                                         </tr>
@@ -162,7 +166,6 @@
             }
         });
     });
-
-	</script>
+</script>
 
 </html>

@@ -30,7 +30,7 @@ $listarVehiculos = $controladorVehiculo->listarVehiculos();
                 <div class="card">
                     <div class="card-header">
                         <div class="d-flex justify-content-between">
-                        <h3 style="color:black;"><span> <b> Lista de Vehiculos</b> </span></h3>
+                            <h3 style="color:black;"><span> <b> Lista de Vehiculos</b> </span></h3>
                             <a href="../Controller/controladorVehiculos.php?registrarVehiculo" style="height: 50%;" class="btn btn-success">Nuevo Vehiculo</a>
                         </div>
                     </div>

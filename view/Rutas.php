@@ -32,13 +32,13 @@ $listarRutas = $controladorRuta->listarRutas();
                     <div class="card">
                         <div class="card-header">
                             <div class="d-flex justify-content-between">
-                            <h3 style="color:black;"><span> <b> Lista de Rutas</b> </span></h3>
+                                <h3 style="color:black;"><span> <b> Lista de Rutas</b> </span></h3>
                                 <a href="../Controller/ControladorRutas.php?registrarRuta" style="height: 50%;" class="btn btn-success">Nueva Ruta</a>
                             </div>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                            <table id="DataTable" style="width:100%; color:black;" class="table table-hover table-bordered display">
+                                <table id="DataTable" style="width:100%; color:black;" class="table table-hover table-bordered display">
                                     <thead>
                                         <tr>
                                             <th>#</th>
@@ -139,7 +139,6 @@ $listarRutas = $controladorRuta->listarRutas();
             }
         });
     });
-
-	</script>
+</script>
 
 </html>

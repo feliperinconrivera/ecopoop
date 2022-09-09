@@ -37,7 +37,7 @@ $listarMantenimientos = $controladorMantenimiento->listarMantenimientos();
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                            <table id="DataTable" style="width:100%; color:black;" class="table table-hover table-bordered display">
+                                <table id="DataTable" style="width:100%; color:black;" class="table table-hover table-bordered display">
                                     <thead>
                                         <tr>
                                             <th>#</th>
@@ -132,6 +132,6 @@ $listarMantenimientos = $controladorMantenimiento->listarMantenimientos();
             }
         });
     });
+</script>
 
-	</script>
 </html>
