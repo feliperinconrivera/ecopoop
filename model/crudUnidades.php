@@ -12,16 +12,16 @@
 
         public function registrarUnidad($unidad){
             $db = ConexionDB::Conectar(); //Conectamos la base de datos
-            $sql = $db->prepare('INSERT INTO  unidades (nombre, direccion, descripcion, n°_apartamentos, n°_contenedores, nombre_administrador, rut, documento)
-            VALUES (:nombre, :direccion, :descripcion, :n°_apartamentos, :n°_contenedores, nombre_administrador, rut, documento)');
-            $sql->bindvalue('nombre',$unidad->getnombre());
-            $sql->bindvalue('direccion',$unidad->getdireccion());
-            $sql->bindvalue('descripcion',$unidad->getdescripcion());
-            $sql->bindvalue('n°_apartamentos',$unidad->getn°_apartamentos());
-            $sql->bindvalue('n°_contenedores',$unidad->getn°_contenedores());
-            $sql->bindvalue('nombre_administrador',$unidad->getnombre_administrador());
-            $sql->bindvalue('rut',$unidad->getrut());
-            $sql->bindvalue('documento',$unidad->getdocumento()); //Asignamos los valores al value
+            $sql = $db->prepare('INSERT INTO  unidades (nombre, direccion, descripcion, no_apartamentos, no_contenedores, nombre_administrador, rut, documento)
+            VALUES (:nombre, :direccion, :descripcion, :no_apartamentos, :no_contenedores, :nombre_administrador, :rut, :documento)');
+            $sql->bindValue('nombre',$unidad->getnombre());
+            $sql->bindValue('direccion',$unidad->getdireccion());
+            $sql->bindValue('descripcion',$unidad->getdescripcion());
+            $sql->bindValue('no_apartamentos',$unidad->getno_apartamentos());
+            $sql->bindValue('no_contenedores',$unidad->getno_contenedores());
+            $sql->bindValue('nombre_administrador',$unidad->getnombre_administrador());
+            $sql->bindValue('rut',$unidad->getrut());
+            $sql->bindValue('documento',$unidad->getdocumento()); //Asignamos los valores al value
             try {
                 $sql->execute(); //Ejecutamos la consulta
                 $mensaje = "Se creo con éxito";
@@ -37,7 +37,7 @@
             $sql = $Db->prepare('SELECT * FROM unidades WHERE id=:id'); //Preparamamos el query
             $sql->bindValue('id',$id); //Asignamos el valor documento
             $sql->execute();//Ejecutamos la consulta
-            return $sql->fetchAll(); //Retornamos una linea
+            return $sql->fetch(); //Retornamos una linea
         }
         
         public function editarUnidad($unidad, $id){
@@ -46,8 +46,8 @@
             nombre=:nombre,
             direccion=:direccion,
             descripcion=:descripcion,
-            n°_apartamentos=:n°_apartamentos,
-            n°_contenedores=:n°_contenedores,
+            no_apartamentos=:no_apartamentos,
+            no_contenedores=:no_contenedores,
             nombre_administrador=:nombre_administrador,
             rut=:rut,
             documento=:documento
@@ -56,12 +56,13 @@
             $sql->bindValue('nombre', $unidad->getnombre());
             $sql->bindValue('direccion', $unidad->getdireccion());
             $sql->bindValue('descripcion', $unidad->getdescripcion());
-            $sql->bindValue('n°_apartamentos', $unidad->getn°_apartamentos());
-            $sql->bindValue('n°_contenedores', $unidad->getn°_contenedores());
+            $sql->bindValue('no_apartamentos', $unidad->getno_apartamentos());
+            $sql->bindValue('no_contenedores', $unidad->getno_contenedores());
             $sql->bindValue('nombre_administrador',$unidad->getnombre_administrador());
             $sql->bindValue('rut',$unidad->getrut());
             $sql->bindValue('documento',$unidad->getdocumento());
             $sql->bindValue('id', $id);
+            // return $sql;
             try{
                 $sql->execute();
                 $mensaje = "Editado con éxito";

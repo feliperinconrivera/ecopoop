@@ -25,12 +25,15 @@
 					<h2>¡Bienvenido de nuevo!</h2>
 					<form>
 						<div class="inputBox">
-							<input type="text" placeholder="Correo electronico" />
+							<input value="" name="usuario" class="form-control" type="text" placeholder="usuario">
 						</div>
+
 						<br>
+						
 						<div class="inputBox">
-							<input type="password" class="form-control form-control-user" id="exampleInputPassword" name="password" placeholder="Contraseña">
+							<input value=""name="pass" class="form-control form-control-user" type="password" placeholder="Contraseña">
 						</div>
+
 						<br>
 						<p class="forget" style="text-align: center;">
 							<a href="./Usuarios.php">Ingresar</a>
@@ -56,3 +59,17 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

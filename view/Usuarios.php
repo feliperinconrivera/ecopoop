@@ -51,7 +51,6 @@ $listaUsuarios = $controladorUsuario->listarUsuarios();
 											<th>Documento</th>
 											<th>Editar</th>
 											<th>Eliminar</th>
-											<th>Detalles</th>
 										</tr>
 									</thead>
 
@@ -69,9 +68,6 @@ $listaUsuarios = $controladorUsuario->listarUsuarios();
 												</td>
 												<td>
 													<a href="../Controller/ControladorUsuarios.php?EliminarUsuario=<?php echo $usuario['id'] ?>" class="btn btn-danger">Eliminar</a>
-												</td>
-												<td>
-													<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Ver más</button>
 												</td>
 											</tr>
 										<?php } ?>
@@ -124,9 +120,27 @@ $listaUsuarios = $controladorUsuario->listarUsuarios();
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
-				<div class="modal-body">
-					
-				</div>
+
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Telefono</th>
+								<th>Documento</th>
+							</tr>
+						</thead>
+						<tbody>
+							<?php foreach ($listaUsuarios as $usuario) { ?>
+								<tr>
+									<hr>
+									<td><?php echo $usuario['telefono']; ?></td>
+									<hr>
+									<td><?php echo $usuario['documento']; ?></td>
+								</tr>
+							<?php } ?>
+						</tbody>
+					</table>
+			
+
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 					<!-- <button type="button" class="btn btn-primary">Save changes</button> -->

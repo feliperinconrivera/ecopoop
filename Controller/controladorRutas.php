@@ -93,7 +93,8 @@ if (isset($_POST['editarRuta'])) {
         // header('Location:../view/EditRutas.php?error=Ocurrio-un-error,-alguno-de-los-campos-no-se-completo.');
     }
     $respuesta = $controladorRuta->editarRuta($_POST['id'], $_POST['ruta'], $_POST['km_ruta'], $_POST['trayectoria'], $_POST['dias'], $_POST['detalle'], $_POST['zona'], $_POST['km_estimado']);
-    // var_dump($respuesta);
+    var_dump($respuesta);
+    exit;
     if ($respuesta == "Editado con éxito") {
         header('Location:../view/Rutas.php');
     } else {

@@ -4,7 +4,9 @@
 <!-- Sidebar - Brand -->
 <a class="sidebar-brand d-flex align-items-center justify-content-center" href="">
     <div class="sidebar-brand">
-        <i class="fas fa-solid fa-dog" style="font-size:30px"></i>
+        <!-- <i class="fas fa-solid fa-dog" style="font-size:30px"></i> -->
+        <img class="img-profile rounded-circle" style="width:45px; margin-top:-8px;" src="../layout/img/ecopoop.jpg "></img>
+        
     </div>
     <div class="sidebar-brand-text mx-6">
       <h6 style="margin-top: 17px; font-size:20px;" ><b>ECO POOP</b></h6>

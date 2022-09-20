@@ -57,15 +57,15 @@ $listarUnidades = $controladorUnidad->listarUnidades();
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="n°_apartamentos">N° Apartamentos:</label>
-                                            <input required id="n°_apartamentos" name="n°_apartamentos" class="form-control" type="text" placeholder="">
+                                            <label for="no_apartamentos">N° Apartamentos:</label>
+                                            <input required id="no_apartamentos" name="no_apartamentos" class="form-control" type="text" placeholder="">
                                         </div>
                                     </div>
 
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="n°_contenedores">N° Contenedores</label>
-                                            <input required id="n°_contenedores" name="n°_contenedores" class="form-control" type="text" placeholder="">
+                                            <label for="no_contenedores">N° Contenedores</label>
+                                            <input required id="no_contenedores" name="no_contenedores" class="form-control" type="text" placeholder="">
                                         </div>
                                     </div>
                                     <div class="col-md-6">

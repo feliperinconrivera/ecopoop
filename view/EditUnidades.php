@@ -40,65 +40,61 @@ $Unidad = $controladorUnidad->buscarUnidad($_GET['id']);
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="nombre">Nombre:</label>
-                                                <input value="<?php echo $Unidad[0]['nombre']; ?>" required id="nombre" name="nombre" class="form-control" type="text" placeholder="">
+                                                <input value="<?php echo $Unidad['nombre']; ?>" required id="nombre" name="nombre" class="form-control" type="text" placeholder="">
                                             </div>
                                         </div>
 
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="direccion">Direccion:</label>
-                                                <input value="<?php echo $Unidad[0]['direccion']; ?>" required id="direccion" name="direccion" class="form-control" type="text" placeholder="">
+                                                <input value="<?php echo $Unidad['direccion']; ?>" required id="direccion" name="direccion" class="form-control" type="text" placeholder="">
                                             </div>
                                         </div>
 
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="descripcion">Descripcion:</label>
-                                                <input value="<?php echo $Unidad[0]['descripcion']; ?>" required id="descripcion" name="descripcion" class="form-control" type="text" placeholder="">
+                                                <input value="<?php echo $Unidad['descripcion']; ?>" required id="descripcion" name="descripcion" class="form-control" type="text" placeholder="">
                                             </div>
                                         </div>
 
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label for="n°_apartamentos">N° Apartamentos:</label>
-                                                <input value="<?php echo $Unidad[0]['n°_apartamentos']; ?>" required id="n°_apartamentos" name="n°_apartamentos" class="form-control" type="text" placeholder="">
+                                                <label for="no_apartamentos">N° Apartamentos:</label>
+                                                <input value="<?php echo $Unidad['no_apartamentos']; ?>" required id="no_apartamentos" name="no_apartamentos" class="form-control" type="text" placeholder="">
                                             </div>
                                         </div>
 
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label for="n°_contenedores">N° Contenedores:</label>
-                                                <input value="<?php echo $Unidad[0]['n°_contenedores']; ?>" required id="n°_contenedores" name="n°_contenedores" class="form-control" type="text" placeholder="">
+                                                <label for="no_contenedores">N° Contenedores:</label>
+                                                <input value="<?php echo $Unidad['no_contenedores']; ?>" required id="no_contenedores" name="no_contenedores" class="form-control" type="text" placeholder="">
                                             </div>
                                         </div>
 
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="nombre_administrador">Nombre Administrador:</label>
-                                                <input value="<?php echo $Unidad[0]['nombre_administrador']; ?>" required id="nombre_administrador" name="nombre_administrador" class="form-control" type="text" placeholder="">
+                                                <input value="<?php echo $Unidad['nombre_administrador']; ?>" required id="nombre_administrador" name="nombre_administrador" class="form-control" type="text" placeholder="">
                                             </div>
                                         </div>
 
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="rut">RUT:</label>
-                                                <input value="<?php echo $Unidad[0]['rut']; ?>" required id="rut" name="rut" class="form-control" type="text" placeholder="">
+                                                <input value="<?php echo $Unidad['rut']; ?>" required id="rut" name="rut" class="form-control" type="text" placeholder="">
                                             </div>
                                         </div>
 
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="documento">Documento:</label>
-                                                <input value="<?php echo $Unidad[0]['documento']; ?>" required id="documento" name="documento" class="form-control" type="text" placeholder="">
+                                                <input value="<?php echo $Unidad['documento']; ?>" required id="documento" name="documento" class="form-control" type="text" placeholder="">
                                             </div>
                                         </div>
-
-
-
-
                                     </div>
 
-                                    <input type="hidden" name="id" value="<?= $Unidad[0]['id']; ?>">
+                                    <input type="hidden" name="id" value="<?= $Unidad['id']; ?>">
 
                                     <hr>
 

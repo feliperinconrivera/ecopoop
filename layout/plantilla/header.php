@@ -43,8 +43,8 @@
         <li class="nav-item dropdown no-arrow">
             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline  " style="font-size: 15px; color:white;" >SALIR</span>
-                <img class="img-profile rounded-circle" src="../layout/img/ecopoop.jpg"></img>
+                <span class="mr-2 d-none d-lg-inline  " style="font-size: 20px; color:white;" >SALIR</span>
+                <img class="img-profile rounded-circle" style="width:40px; height:40px;" src="../layout/img/user2.png"></img>
             </a>
             <!-- Dropdown - User Information -->
             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"

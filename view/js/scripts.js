@@ -25,7 +25,7 @@ $(document).ready(function(){
   }
 
   $("#fecha").datetimepicker({
-    format: "dd/mm/yyyy/ hh:ii",
+    format: "yyyy/mm/dd hh:ii",
     autoclose: true,
     todayBtn: true,
     todayHighlight: true,

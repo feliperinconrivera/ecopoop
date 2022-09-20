@@ -3,8 +3,8 @@
         private $nombre;
         private $direccion;
         private $descripcion;
-        private $n°_apartamentos;
-        private $n°_contenedores;
+        private $no_apartamentos;
+        private $no_contenedores;
         private $nombre_administrador;
         private $rut;
         private $documento;
@@ -25,11 +25,11 @@
             $this->descripcion=$descripcion;
         }
 
-        public function setn°_apartamentos($n°_apartamentos){
-            return $this->n°_apartamentos= $n°_apartamentos;
+        public function setno_apartamentos($no_apartamentos){
+            return $this->no_apartamentos= $no_apartamentos;
         }
-        public function setn°_contenedores($n°_contenedores){
-            $this->n°_contenedores=$n°_contenedores;
+        public function setno_contenedores($no_contenedores){
+            $this->no_contenedores=$no_contenedores;
         }
 
         public function setnombre_administrador($nombre_administrador){
@@ -46,12 +46,6 @@
 
         
 
-
-
-
-
-
-
         public function getnombre(){
             return $this->nombre;
         }
@@ -64,12 +58,12 @@
             return $this->descripcion;
         }
 
-        public function getn°_apartamentos(){
-            return $this->n°_apartamentos;
+        public function getno_apartamentos(){
+            return $this->no_apartamentos;
         }
 
-        public function getn°_contenedores(){
-            return $this->n°_contenedores;
+        public function getno_contenedores(){
+            return $this->no_contenedores;
         }
 
         public function getnombre_administrador(){

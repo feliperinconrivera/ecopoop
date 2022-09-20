@@ -64,6 +64,7 @@
             $sql->bindValue('zona', $ruta->getzona());
             $sql->bindValue('km_estimado', $ruta->getkm_estimado());
             $sql->bindValue('id', $id);
+            return $sql;
             try{
                 $sql->execute();
                 $mensaje = "Editado con éxito";

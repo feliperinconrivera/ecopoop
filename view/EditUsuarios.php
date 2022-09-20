@@ -1,5 +1,4 @@
 <?php
-
 require_once('../Controller/ControladorUsuarios.php');
 $Usuario = $controladorUsuario->buscarUsuario($_GET['id']);
 ?>

@@ -1,3 +1,8 @@
+<?php
+require_once('../Controller/controladorPlanillas.php');
+$listarPlanillas = $controladorPlanilla->listarPlanillas();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <link rel="icon" href="https://www.ecopoop.co/wp-content/uploads/2017/07/LOGO.png">
@@ -27,61 +32,67 @@
                     <div class="card">
                         <div class="card-header">
                             <div class="d-flex justify-content-between">
-                            <h3 style="color:black;"><span> <b>Nueva Planilla</b> </span></h3>
-                                <a href="../view/Planilla.php" style="height: 50%;" class="btn btn-success">Regresar</a>
+                                <h3 style="color:black;"><span> <b>Nueva Planilla</b> </span></h3>
+                                <a href="../Controller/controladorPlanillas.php?listarPlanillas" style="height: 50%;" class="btn btn-success">Regresar</a>
                             </div>
                         </div>
                         <div class="card-body">
                             <div id="error"></div>
-                            <form action="" method="POST">
+                            <form action="../Controller/controladorPlanillas.php" method="POST">
 
                                 <div class="row" style="color:black;">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Fecha Y Hora:</label>
-                                            <input type="text" name="fecha" id="fecha" class="form-control" placeholder="dd/mm/aaaa" readonly>
+                                            <label for="fecha">Fecha:</label>
+                                            <input type="text" name="fecha" id="fecha" class="form-control" placeholder="aaaa/mm/dd" readonly>
                                         </div>
                                     </div>
 
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="cantidad_bolsas">Tipo Residuo</label>
-                                            <input required id="cantidad_bolsas" name="cantidad_bolsas" class="form-control" type="text" placeholder="">
+                                            <label for="tipo_residuo">Tipo Residuo</label>
+                                            <input required id="tipo_residuo" name="tipo_residuo" class="form-control" type="text" placeholder="">
                                         </div>
                                     </div>
 
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="unidad_residencial">INFEC:</label>
-                                            <input required id="unidad_residencial" name="unidad_residencial" class="form-control" type="text" placeholder="">
+                                            <label for="infec">INFEC:</label>
+                                            <input required id="infec" name="infec" class="form-control" type="text" placeholder="">
                                         </div>
                                     </div>
 
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="responsable_planilla">Numero Bolsas:</label>
-                                            <input required id="responsable_planilla" name="responsable_planilla" class="form-control" type="text" placeholder="">
+                                            <label for="numero_bolsas">Numero Bolsas:</label>
+                                            <input required id="numero_bolsas" name="numero_bolsas" class="form-control" type="text" placeholder="">
                                         </div>
                                     </div>
 
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="hora_entrada">Peso En Kg:</label>
-                                            <input required id="hora_entrada" name="hora_entrada" class="form-control" type="text" placeholder="">
+                                            <label for="peso_kg">Peso En Kg:</label>
+                                            <input required id="peso_kg" name="peso_kg" class="form-control" type="text" placeholder="">
                                         </div>
                                     </div>
 
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="hora_salida">Conductor:</label>
-                                            <input required id="hora_salida" name="hora_salida" class="form-control" type="text" placeholder="">
+                                            <label for="conductor">Conductor:</label>
+                                            <input required id="conductor" name="conductor" class="form-control" type="text" placeholder="">
                                         </div>
                                     </div>
 
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="observaciones">Entrego:</label>
-                                            <input required id="observaciones" name="observaciones" class="form-control" type="text" placeholder="">
+                                            <label for="entrego">Entrego:</label>
+                                            <input required id="entrego" name="entrego" class="form-control" type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="total_kg">Total kg:</label>
+                                            <input required id="total_kg" name="total_kg" class="form-control" type="text" placeholder="">
                                         </div>
                                     </div>
                                 </div>
@@ -91,13 +102,13 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input name="registrarRuta" type="submit" class="btn btn-success col-md-12" value="Registrar">
+                                            <input name="registrarPlanilla" type="submit" class="btn btn-success col-md-12" value="Registrar">
                                         </div>
                                     </div>
 
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <a href="Planilla.php" class="btn btn-danger col-md-12">Cancelar</a>
+                                            <a href="../Controller/controladorPlanillas.php?listarPlanillas" class="btn btn-danger col-md-12">Cancelar</a>
                                         </div>
                                     </div>
                                 </div>
@@ -128,7 +139,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="../view/js/jquery-3.3.1.min.js"></script>
     <script src="./js/bootstrap-datetimepicker.min.js"></script>
-    <script src="./js/scripts.js"></script>
+    <script src="./js/scripts1.js"></script>
 
 </body>
 

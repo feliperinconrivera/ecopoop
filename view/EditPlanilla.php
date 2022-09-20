@@ -1,3 +1,8 @@
+<?php
+require_once('../Controller/controladorPlanillas.php');
+$Planilla = $controladorPlanilla->buscarPlanilla($_GET['id']);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <link rel="icon" href="https://www.ecopoop.co/wp-content/uploads/2017/07/LOGO.png">
@@ -30,7 +35,7 @@
                         <div class="card-header">
                             <div class="d-flex justify-content-between">
                                 <h1>Editar Planilla</h1>
-                                <a href="../view/Planilla.php" style="height: 50%;" class="btn btn-success">Regresar</a>
+                                <a href="../view/Planilla" style="height: 50%;" class="btn btn-success">Regresar</a>
                             </div>
                         </div>
                         <div class="card-body">
@@ -41,59 +46,68 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="fecha">Fecha:</label>
-                                            <input type="text" name="fecha" required id="fecha" class="form-control" placeholder="dd/mm/aaaa" readonly>
+                                            <input type="text" value="<?php echo $Planilla[0]['fecha']; ?>" name="fecha" required id="fecha" class="form-control" placeholder="dd/mm/aaaa" readonly>
                                         </div>
                                     </div>
 
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="cantidad_bolsas">Tipo Residuo</label>
-                                            <input required id="cantidad_bolsas" name="cantidad_bolsas" class="form-control" type="text" placeholder="">
+                                            <label for="tipo_residuo">Tipo Residuo</label>
+                                            <input value="<?php echo $Planilla[0]['tipo_residuo']; ?>" required id="tipo_residuo" name="tipo_residuo" class="form-control" type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                        
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="infec">INFEC:</label>
+                                            <input value="<?php echo $Planilla[0]['infec']; ?>" required id="infec" name="infec" class="form-control" type="text" placeholder="">
                                         </div>
                                     </div>
 
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="unidad_residencial">INFEC:</label>
-                                            <input required id="unidad_residencial" name="unidad_residencial" class="form-control" type="text" placeholder="">
+                                            <label for="numero_bolsas">Numero Bolsas:</label>
+                                            <input value="<?php echo $Planilla[0]['numero_bolsas']; ?>" required id="numero_bolsas" name="numero_bolsas" class="form-control" type="text" placeholder="">
                                         </div>
                                     </div>
 
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="responsable_planilla">Numero Bolsas:</label>
-                                            <input required id="responsable_planilla" name="responsable_planilla" class="form-control" type="text" placeholder="">
+                                            <label for="peso_kg">Peso En Kg:</label>
+                                            <input value="<?php echo $Planilla[0]['peso_kg']; ?>" required id="peso_kg" name="peso_kg" class="form-control" type="text" placeholder="">
                                         </div>
                                     </div>
 
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="hora_entrada">Peso En Kg:</label>
-                                            <input required id="hora_entrada" name="hora_entrada" class="form-control" type="text" placeholder="">
+                                            <label for="conductor">Conductor:</label>
+                                            <input value="<?php echo $Planilla[0]['conductor']; ?>" required id="conductor" name="conductor" class="form-control" type="text" placeholder="">
                                         </div>
                                     </div>
 
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="hora_salida">Conductor:</label>
-                                            <input required id="hora_salida" name="hora_salida" class="form-control" type="text" placeholder="">
+                                            <label for="entrego">Entrego:</label>
+                                            <input value="<?php echo $Planilla[0]['entrego']; ?>" required id="entrego" name="entrego" class="form-control" type="text" placeholder="">
                                         </div>
                                     </div>
-
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="observaciones">Entrego:</label>
-                                            <input required id="observaciones" name="observaciones" class="form-control" type="text" placeholder="">
+                                            <label for="total_kg">Total kg:</label>
+                                            <input value="<?php echo $Planilla[0]['total_kg']; ?>" required id="total_kg" name="total_kg" class="form-control" type="text" placeholder="">
                                         </div>
                                     </div>
                                 </div>
+
+                                <input type="hidden" name="id" value="<?= $Planilla[0]['id']; ?>">
 
                                 <hr>
 
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input name="registrarRuta" type="submit" class="btn btn-success col-md-12" value="Registrar">
+                                            <input name="registrarPlanilla" type="submit" class="btn btn-success col-md-12" value="Editar">
                                         </div>
                                     </div>
 

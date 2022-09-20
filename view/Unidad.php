@@ -38,7 +38,7 @@ $listaUnidades = $controladorUnidad->listarUnidades();
 						</div>
 						<div class="card-body">
 							<div class="table-responsive">
-								<table id="DataTable" style="width:100%; color:black;" class="table table-hover table-bordered display">
+								<table id="DataTable" style="width:100%; color:black;" class="table table-bordered display">
 									<thead>
 										<th>#</th>
 										<th>Nombre Unidad</th>
@@ -60,8 +60,8 @@ $listaUnidades = $controladorUnidad->listarUnidades();
 												<td><?php echo $unidad['nombre']; ?></td>
 												<td><?php echo $unidad['direccion']; ?></td>
 												<!-- <td><php echo $unidad['descripcion']; ?></td>
-												<td><php echo $unidad['n°_apartamentos']; ?></td>
-												<td><php echo $unidad['n°_contenedores']; ?></td> -->
+												<td><php echo $unidad['no_apartamentos']; ?></td>
+												<td><php echo $unidad['no_contenedores']; ?></td> -->
 												<td><?php echo $unidad['nombre_administrador']; ?></td>
 												<td><?php echo $unidad['rut']; ?></td>
 												<td><?php echo $unidad['documento']; ?></td>
@@ -124,10 +124,28 @@ $listaUnidades = $controladorUnidad->listarUnidades();
 							</button>
 						</div>
 						<div class="modal-body">
+							<table class="table table-bordered">
+								<thead>
+									<tr>
+										<th>Descripcion</th>
+										<th>N° Apartamentos</th>
+										<th>N° Contenedores</th>
+									</tr>
+								</thead>
+								<tbody>
+									<?php foreach ($listaUnidades as $unidad) { ?>
+										<tr>
+											<td><?php echo $unidad['descripcion']; ?></td>
+											<td><?php echo $unidad['no_apartamentos']; ?></td>
+											<td><?php echo $unidad['no_contenedores']; ?></td>
 
+										</tr>
+									<?php } ?>
+								</tbody>
+							</table>
 						</div>
 						<div class="modal-footer">
-							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-success" data-dismiss="modal">Listo</button>
 							<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
 						</div>
 					</div>
@@ -177,8 +195,13 @@ $listaUnidades = $controladorUnidad->listarUnidades();
 					}
 				})
 				.done(function(msg) {
-					console.log(msg);
-					$('#exampleModal .modal-body').text(msg);
+					const resultado = JSON.parse(msg);
+					console.log(resultado);
+					$('#exampleModal .modal-body table tbody').html(`<tr>
+						<td>${resultado.descripcion}</td>
+						<td>${resultado[4]}</td>
+						<td>${resultado[5]}</td>
+					</tr>`);
 					// alert("Data Saved: " + msg);
 				});
 

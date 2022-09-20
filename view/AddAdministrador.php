@@ -55,8 +55,8 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="n°_apartamentos">Documento:</label>
-                                            <input required id="n°_apartamentos" name="n°_apartamentos" class="form-control" type="text" placeholder="">
+                                            <label for="no_apartamentos">Documento:</label>
+                                            <input required id="no_apartamentos" name="no_apartamentos" class="form-control" type="text" placeholder="">
                                         </div>
                                     </div>
                                 </div>

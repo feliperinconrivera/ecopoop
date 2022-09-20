@@ -7,9 +7,7 @@ $Mantenimiento = $controladorMantenimiento->buscarMantenimiento($_GET['id']);
 <!DOCTYPE html>
 <html lang="en">
 <link rel="icon" href="https://www.ecopoop.co/wp-content/uploads/2017/07/LOGO.png">
-
-
-
+ 
 <head>
     <link rel="stylesheet" type="text/css" href="../css/123.css">
     <link rel="stylesheet" type="text/css" href="../css/bootstrap-datetimepicker.min.css">
