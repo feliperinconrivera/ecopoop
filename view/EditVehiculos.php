@@ -1,5 +1,5 @@
 <?php
-require_once('../Controller/controladorVehiculos.php');
+require_once('../Controllers/controladorVehiculos.php');
 $Vehiculo = $controladorVehiculo->buscarVehiculo($_GET['id']);;
 ?>
 <!DOCTYPE html>
@@ -40,14 +40,14 @@ $Vehiculo = $controladorVehiculo->buscarVehiculo($_GET['id']);;
 									<div class="col-md-6">
 										<div class="form-group">
 											<label for="placa">Numero Placa:</label>
-											<input value="<?php echo $Vehiculo[0]['placa']; ?>" required id="placa" name="placa" class="form-control" type="text" placeholder="placa...">
+											<input value="<?php echo $Vehiculo[0]['placa']; ?>" required id="placa" name="placa" class="form-control" type="text" placeholder="">
 										</div>
 									</div>
 
 									<div class="col-md-6">
 										<div class="form-group">
 											<label for="tipo_carro">Tipo Carro:</label>
-											<input value="<?php echo $Vehiculo[0]['tipo_carro']; ?>" required id="tipo_carro" name="tipo_carro" class="form-control" type="text" placeholder="Tipo Carro...">
+											<input value="<?php echo $Vehiculo[0]['tipo_carro']; ?>" required id="tipo_carro" name="tipo_carro" class="form-control" type="text" placeholder="">
 										</div>
 									</div>
 								</div>
@@ -56,13 +56,13 @@ $Vehiculo = $controladorVehiculo->buscarVehiculo($_GET['id']);;
 									<div class="col-md-6">
 										<div class="form-group">
 											<label for="descripcion">descripcion:</label>
-											<input value="<?php echo $Vehiculo[0]['descripcion']; ?>" required id="descripcion" name="descripcion" class="form-control" type="text" placeholder="descripcion...">
+											<input value="<?php echo $Vehiculo[0]['descripcion']; ?>" required id="descripcion" name="descripcion" class="form-control" type="text" placeholder="">
 										</div>
 									</div>
 									<div class="col-md-6">
 										<div class="form-group">
 											<label for="capacidad_contenedor">Capacidad Contenedor:</label>
-											<input value="<?php echo $Vehiculo[0]['capacidad_contenedor']; ?>" required id="capacidad_contenedor" name="capacidad_contenedor" class="form-control" type="text" placeholder="Capacidad Contenedor...">
+											<input value="<?php echo $Vehiculo[0]['capacidad_contenedor']; ?>" required id="capacidad_contenedor" name="capacidad_contenedor" class="form-control" type="text" placeholder="">
 										</div>
 									</div>
 								</div>

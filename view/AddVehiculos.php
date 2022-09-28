@@ -1,5 +1,5 @@
 <?php
-require_once('../Controller/controladorVehiculos.php');
+require_once('../Controllers/controladorVehiculos.php');
 $listarVehiculos = $controladorVehiculo->listarVehiculos();
 ?>
 <!DOCTYPE html>
@@ -38,13 +38,13 @@ $listarVehiculos = $controladorVehiculo->listarVehiculos();
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="placa">Placa</label>
-                                            <input required id="placa" name="placa" class="form-control" type="text" placeholder="Placa...">
+                                            <input required id="placa" name="placa" class="form-control" type="text" placeholder="">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="tipo_carro">Tipo Carro:</label>
-                                            <input required id="tipo_carro" name="tipo_carro" class="form-control" type="text" placeholder="Tipo Carro...">
+                                            <input required id="tipo_carro" name="tipo_carro" class="form-control" type="text" placeholder="">
                                         </div>
                                     </div>
                                 </div>
@@ -52,13 +52,13 @@ $listarVehiculos = $controladorVehiculo->listarVehiculos();
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="descripcion">descripcion:</label>
-                                            <input required id="descripcion" name="descripcion" class="form-control" type="text" placeholder="descripcion...">
+                                            <input required id="descripcion" name="descripcion" class="form-control" type="text" placeholder="">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="capacidad_contenedor">Capacidad Contenedor:</label>
-                                            <input required id="capacidad_contenedor" name="capacidad_contenedor" class="form-control" type="text" placeholder="Capacidad Contenedor...">
+                                            <input required id="capacidad_contenedor" name="capacidad_contenedor" class="form-control" type="text" placeholder="">
                                         </div>
                                     </div>
                                 </div>

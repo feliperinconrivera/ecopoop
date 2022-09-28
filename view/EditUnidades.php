@@ -1,5 +1,5 @@
 <?php
-require_once('../Controller/ControladorUnidades.php');
+require_once('../Controllers/ControladorUnidades.php');
 $Unidad = $controladorUnidad->buscarUnidad($_GET['id']);
 ?>
 <!DOCTYPE html>

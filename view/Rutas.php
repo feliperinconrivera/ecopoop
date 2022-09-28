@@ -1,5 +1,5 @@
 <?php
-require_once('../Controller/controladorRutas.php');
+require_once('../Controllers/controladorRutas.php');
 $listarRutas = $controladorRuta->listarRutas();
 ?>
 <!DOCTYPE html>

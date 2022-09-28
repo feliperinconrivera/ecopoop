@@ -1,75 +1,62 @@
-<!DOCTYPE html>
-<link rel="icon" href="https://www.ecopoop.co/wp-content/uploads/2017/07/LOGO.png">
-<html lang="en">
+ <!DOCTYPE html>
+ <link rel="icon" href="https://www.ecopoop.co/wp-content/uploads/2017/07/LOGO.png">
+ <html lang="en">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ECO POOP</title>
-	<link rel="stylesheet" href="../css/recuperar.css">
-</head>
+ <head>
+ 	<meta charset="UTF-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<title>ECO POOP</title>
+ 	<link rel="stylesheet" href="../css/recuperar.css">
+ </head>
 
-<body>
-	<section>
-		<div class="color"></div>
-		<div class="color"></div>
-		<div class="color"></div>
-		<div class="box">
-			<div class="square" style="--i:0;"></div>
-			<div class="square" style="--i:1;"></div>
-			<div class="square" style="--i:2;"></div>
-			<div class="square" style="--i:3;"></div>
-			<div class="square" style="--i:4;"></div>
-			<div class="container">
-				<div class="form">
-					<h2>¡Bienvenido de nuevo!</h2>
-					<form>
-						<div class="inputBox">
-							<input value="" name="usuario" class="form-control" type="text" placeholder="usuario">
-						</div>
+ <body>
+ 	<section>
+ 		<div class="color"></div>
+ 		<div class="color"></div>
+ 		<div class="color"></div>
+ 		<div class="box">
+ 			<div class="square" style="--i:0;"></div>
+ 			<div class="square" style="--i:1;"></div>
+ 			<div class="square" style="--i:2;"></div>
+ 			<div class="square" style="--i:3;"></div>
+ 			<div class="square" style="--i:4;"></div>
+ 			<div class="container">
+ 				<div class="form">
+ 					<h2><?= $data['page_tag']; ?></h2>
+ 					<form>
+ 						<div class="inputBox">
+ 							<input id="txtEmail" name="txtEmail" class="form-control" type="email" placeholder="Email" autofocus>
+ 						</div>
 
-						<br>
+ 						<br>
+
+ 						<div class="inputBox" >
+ 							<input id="txtPassword" name="txtPassword" class="form-control" type="password" placeholder="Contraseña">
+ 						</div>
+
+ 						<div id="alertLogin" class="text-center" ></div>
+ 						<div class="form-group btn-container">
+ 							<button type="submit" class="btn btn-primary btn-block"><i class="fas fa-sign-in-alt"></i> INICIAR SESIÓN</button>
+ 						</div>
 						
-						<div class="inputBox">
-							<input value=""name="pass" class="form-control form-control-user" type="password" placeholder="Contraseña">
-						</div>
 
-						<br>
-						<p class="forget" style="text-align: center;">
-							<a href="./Usuarios.php">Ingresar</a>
-						</p>
-						<br>
-						<p class="forget" style="text-align: center;">
-							<a href="./recuperar.php">¿Perdiste tu contraseña?</a>
-						</p>
-						<br>
+ 						<p class="forget" style="text-align: center;">
+ 							<a href="./registro.php">Registrate</a>
+ 						</p>
+ 						<br>
+ 						<p class="forget">
+						 <h3 class="login-head" style="text-align: center;"><i class="fa fa-lg fa-fw fa-lock"></i>¿Olvidaste contraseña?</h3>
+ 						</p>
+ 						
+ 					</form>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</section>
+ </body>
+ 
+ </html>
+ </section>
+ </body>
 
-						<p class="forget" style="text-align: center;">
-							<a href="./registro.php">Registrate</a>
-						</p>
-					</form>
-				</div>
-			</div>
-		</div>
-	</section>
-</body>
-
-</html>
-</section>
-</body>
-
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ </html>

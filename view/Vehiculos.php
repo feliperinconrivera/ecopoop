@@ -1,5 +1,5 @@
 <?php
-require_once('../Controller/controladorVehiculos.php');
+require_once('../Controllers/controladorVehiculos.php');
 $listarVehiculos = $controladorVehiculo->listarVehiculos();
 ?>
 <!DOCTYPE html>

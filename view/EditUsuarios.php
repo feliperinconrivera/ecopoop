@@ -1,5 +1,5 @@
 <?php
-require_once('../Controller/ControladorUsuarios.php');
+require_once('../Controllers/ControladorUsuarios.php');
 $Usuario = $controladorUsuario->buscarUsuario($_GET['id']);
 ?>
 
@@ -41,14 +41,14 @@ $Usuario = $controladorUsuario->buscarUsuario($_GET['id']);
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="nombre">Nombre:</label>
-                                                <input value="<?php echo $Usuario[0]['nombre']; ?>" required id="nombre" name="nombre" class="form-control" type="text" placeholder="Nombre...">
+                                                <input value="<?php echo $Usuario[0]['nombre']; ?>" required id="nombre" name="nombre" class="form-control" type="text" placeholder="">
                                             </div>
                                         </div>
 
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="apellido">Apellido:</label>
-                                                <input value="<?php echo $Usuario[0]['apellido']; ?>" required id="apellido" name="apellido" class="form-control" type="text" placeholder="Apellido...">
+                                                <input value="<?php echo $Usuario[0]['apellido']; ?>" required id="apellido" name="apellido" class="form-control" type="text" placeholder="">
                                             </div>
                                         </div>
                                     </div>
@@ -57,14 +57,14 @@ $Usuario = $controladorUsuario->buscarUsuario($_GET['id']);
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="email">Email:</label>
-                                                <input value="<?php echo $Usuario[0]['email']; ?>" required id="email" name="email" class="form-control" type="email" placeholder="Correo elect...">
+                                                <input value="<?php echo $Usuario[0]['email']; ?>" required id="email" name="email" class="form-control" type="email" placeholder="">
                                             </div>
                                         </div>
 
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="telefono">Teléfono:</label>
-                                                <input value="<?php echo $Usuario[0]['telefono']; ?>" required id="telefono" name="telefono" class="form-control" type="text" placeholder="Numero teléfono...">
+                                                <input value="<?php echo $Usuario[0]['telefono']; ?>" required id="telefono" name="telefono" class="form-control" type="text" placeholder="">
                                             </div>
                                         </div>
                                     </div>
@@ -73,7 +73,7 @@ $Usuario = $controladorUsuario->buscarUsuario($_GET['id']);
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="documento">Documento:</label>
-                                                <input value="<?php echo $Usuario[0]['documento']; ?>" required id="documento" name="documento" class="form-control" type="text" placeholder="Documento...">
+                                                <input value="<?php echo $Usuario[0]['documento']; ?>" required id="documento" name="documento" class="form-control" type="text" placeholder="">
                                             </div>
                                         </div>
                                     </div>

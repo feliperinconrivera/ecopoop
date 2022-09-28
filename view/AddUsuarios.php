@@ -1,5 +1,5 @@
 <?php
-require_once('../Controller/ControladorUsuarios.php');
+require_once('../Controllers/ControladorUsuarios.php');
 $listarUsuarios = $controladorUsuario->listarUsuarios();
 ?>
 <!DOCTYPE html>
@@ -39,13 +39,13 @@ $listarUsuarios = $controladorUsuario->listarUsuarios();
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="nombre">Nombre:</label>
-                                            <input required id="nombre" name="nombre" class="form-control" type="text" placeholder="Nombre...">
+                                            <input required id="nombre" name="nombre" class="form-control" type="text" placeholder="">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="apellido">Apellido:</label>
-                                            <input required id="apellido" name="apellido" class="form-control" type="text" placeholder="Apellido...">
+                                            <input required id="apellido" name="apellido" class="form-control" type="text" placeholder="">
                                         </div>
                                     </div>
                                 </div>
@@ -54,13 +54,13 @@ $listarUsuarios = $controladorUsuario->listarUsuarios();
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="correo">Email:</label>
-                                            <input required id="email" name="email" class="form-control" type="email" placeholder="Correo elect...">
+                                            <input required id="email" name="email" class="form-control" type="email" placeholder="">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="telefono">Telefono:</label>
-                                            <input required id="telefono" name="telefono" class="form-control" type="text" placeholder="Numero teléfono...">
+                                            <input required id="telefono" name="telefono" class="form-control" type="text" placeholder="">
                                         </div>
                                     </div>
                                 </div>
@@ -69,7 +69,7 @@ $listarUsuarios = $controladorUsuario->listarUsuarios();
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="cedula">Documento:</label>
-                                            <input required id="documento" name="documento" class="form-control" type="text" placeholder="Documento...">
+                                            <input required id="documento" name="documento" class="form-control" type="text" placeholder="">
                                         </div>
                                     </div>
                                 </div>

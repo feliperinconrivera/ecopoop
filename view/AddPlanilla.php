@@ -1,5 +1,5 @@
 <?php
-require_once('../Controller/controladorPlanillas.php');
+require_once('../Controllers/controladorPlanillas.php');
 $listarPlanillas = $controladorPlanilla->listarPlanillas();
 ?>
 
@@ -44,7 +44,7 @@ $listarPlanillas = $controladorPlanilla->listarPlanillas();
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="fecha">Fecha:</label>
-                                            <input type="text" name="fecha" id="fecha" class="form-control" placeholder="aaaa/mm/dd" readonly>
+                                            <input type="text" name="fecha" id="fecha" class="form-control" placeholder="" readonly>
                                         </div>
                                     </div>
 
@@ -108,7 +108,7 @@ $listarPlanillas = $controladorPlanilla->listarPlanillas();
 
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <a href="../Controller/controladorPlanillas.php?listarPlanillas" class="btn btn-danger col-md-12">Cancelar</a>
+                                            <a href="planilla.php" class="btn btn-danger col-md-12">Cancelar</a>
                                         </div>
                                     </div>
                                 </div>

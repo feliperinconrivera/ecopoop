@@ -1,7 +1,3 @@
-<?php
-require_once('../Controller/ControladorUsuarios.php');
-$listaUsuarios = $controladorUsuario->listarUsuarios();
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -54,23 +50,6 @@ $listaUsuarios = $controladorUsuario->listarUsuarios();
 										</tr>
 									</thead>
 
-									<tbody>
-										<?php foreach ($listaUsuarios as $usuario) { ?>
-											<tr>
-												<td><?php echo $usuario['id']; ?></td>
-												<td><?php echo $usuario['nombre']; ?></td>
-												<td><?php echo $usuario['apellido']; ?></td>
-												<td><?php echo $usuario['email']; ?></td>
-												<td><?php echo $usuario['telefono']; ?></td>
-												<td><?php echo $usuario['documento']; ?></td>
-												<td>
-													<a href="../Controller/ControladorUsuarios.php?editarUsuario=<?php echo $usuario['id'] ?>" class="btn btn-success">Editar</a>
-												</td>
-												<td>
-													<a href="../Controller/ControladorUsuarios.php?EliminarUsuario=<?php echo $usuario['id'] ?>" class="btn btn-danger">Eliminar</a>
-												</td>
-											</tr>
-										<?php } ?>
 									</tbody>
 								</table>
 							</div>

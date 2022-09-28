@@ -1,5 +1,5 @@
 <?php
-require_once('../Controller/ControladorUnidades.php');
+require_once('../Controllers/ControladorUnidades.php');
 $listarUnidades = $controladorUnidad->listarUnidades();
 ?>
 <!DOCTYPE html>

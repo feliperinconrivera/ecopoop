@@ -1,5 +1,5 @@
 <?php
-require_once('../Controller/ControladorMantenimientos.php');
+require_once('../Controllers/ControladorMantenimientos.php');
 $listarMantenimientos = $controladorMantenimiento->listarMantenimientos();
 ?>
 <!DOCTYPE html>

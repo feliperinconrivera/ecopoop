@@ -1,5 +1,5 @@
 <?php
-require_once('../Controller/controladorPlanillas.php');
+require_once('../Controllers/controladorPlanillas.php');
 $listaPlanillas = $controladorPlanilla->listarPlanillas();
 ?>
 

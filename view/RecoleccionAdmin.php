@@ -27,7 +27,7 @@
                         <div class="card-header">
                             <div class="d-flex justify-content-between">
                                 <h3 style="color:black;"><span> <b> Lista de Recoleccion Admin</b> </span></h3>
-                                <a href="../Controller/ControladorUsuarios.php?registrarUsuario" style="height: 50%;" class="btn btn-success">Nueva Recoleccion</a>
+                                <!-- <a href="../Controller/ControladorUsuarios.php?registrarUsuario" style="height: 50%;" class="btn btn-success">Nueva Recoleccion</a> -->
                             </div>
                         </div>
                         <div class="card-body">

@@ -1,5 +1,5 @@
 <?php
-require_once('../Controller/controladorRutas.php');
+require_once('../Controllers/controladorRutas.php');
 $Ruta = $controladorRuta->buscarRuta($_GET['id']);
 
 ?>
@@ -41,49 +41,49 @@ $Ruta = $controladorRuta->buscarRuta($_GET['id']);
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="ruta">Ruta</label>
-                                                <input value="<?php echo $Ruta[0]['ruta']; ?>" required id="ruta" name="ruta" class="form-control" type="text" placeholder="Nombre Ruta">
+                                                <input value="<?php echo $Ruta[0]['ruta']; ?>" required id="ruta" name="ruta" class="form-control" type="text" placeholder="">
                                             </div>
                                         </div>
 
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="km_ruta">Km Ruta</label>
-                                                <input value="<?php echo $Ruta[0]['km_ruta']; ?>" required id="km_ruta" name="km_ruta" class="form-control" type="text" placeholder="Km Ruta">
+                                                <input value="<?php echo $Ruta[0]['km_ruta']; ?>" required id="km_ruta" name="km_ruta" class="form-control" type="text" placeholder="">
                                             </div>
                                         </div>
 
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="trayectoria">Trayectoria:</label>
-                                                <input value="<?php echo $Ruta[0]['trayectoria']; ?>" required id="trayectoria" name="trayectoria" class="form-control" type="text" placeholder="Trayectoria">
+                                                <input value="<?php echo $Ruta[0]['trayectoria']; ?>" required id="trayectoria" name="trayectoria" class="form-control" type="text" placeholder="">
                                             </div>
                                         </div>
 
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="dias">Dias</label>
-                                                <input value="<?php echo $Ruta[0]['dias']; ?>" required id="dias" name="dias" class="form-control" type="text" placeholder="Dias">
+                                                <input value="<?php echo $Ruta[0]['dias']; ?>" required id="dias" name="dias" class="form-control" type="text" placeholder="">
                                             </div>
                                         </div>
 
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="detalle">Detalle</label>
-                                                <input value="<?php echo $Ruta[0]['detalle']; ?>" required id="detalle" name="detalle" class="form-control" type="text" placeholder="Detalle">
+                                                <input value="<?php echo $Ruta[0]['detalle']; ?>" required id="detalle" name="detalle" class="form-control" type="text" placeholder="">
                                             </div>
                                         </div>
 
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="zona">zona</label>
-                                                <input value="<?php echo $Ruta[0]['zona']; ?>" required id="zona" name="zona" class="form-control" type="text" placeholder="zona">
+                                                <input value="<?php echo $Ruta[0]['zona']; ?>" required id="zona" name="zona" class="form-control" type="text" placeholder="">
                                             </div>
                                         </div>
 
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="km_estimado">Km Estimado</label>
-                                                <input value="<?php echo $Ruta[0]['km_estimado']; ?>" required id="km_estimado" name="km_estimado" class="form-control" type="text" placeholder="km_estimado">
+                                                <input value="<?php echo $Ruta[0]['km_estimado']; ?>" required id="km_estimado" name="km_estimado" class="form-control" type="text" placeholder="">
                                             </div>
                                         </div>
                                         <div class="col-md-6">

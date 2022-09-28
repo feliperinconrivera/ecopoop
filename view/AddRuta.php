@@ -1,5 +1,5 @@
 <?php
-require_once('../Controller/controladorRutas.php');
+require_once('../Controllers/controladorRutas.php');
 $listaRutas = $controladorRuta->listarRutas();
 ?>
 <!DOCTYPE html>
@@ -39,42 +39,42 @@ $listaRutas = $controladorRuta->listarRutas();
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="ruta">Nombre Ruta:</label>
-                                            <input required id="ruta" name="ruta" class="form-control" type="text" placeholder="Nombre Ruta...">
+                                            <input required id="ruta" name="ruta" class="form-control" type="text" placeholder="">
                                         </div>
                                     </div>
 
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="km_ruta">Km Ruta:</label>
-                                            <input required id="km_ruta" name="km_ruta" class="form-control" type="text" placeholder="Km Ruta...">
+                                            <input required id="km_ruta" name="km_ruta" class="form-control" type="text" placeholder="">
                                         </div>
                                     </div>
 
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="trayectoria">trayectoria:</label>
-                                            <input required id="trayectoria" name="trayectoria" class="form-control" type="text" placeholder="trayectoria...">
+                                            <input required id="trayectoria" name="trayectoria" class="form-control" type="text" placeholder="">
                                         </div>
                                     </div>
 
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="dias">dias:</label>
-                                            <input required id="dias" name="dias" class="form-control" type="text" placeholder="dias...">
+                                            <input required id="dias" name="dias" class="form-control" type="text" placeholder="">
                                         </div>
                                     </div>
 
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="detalle">detalle:</label>
-                                            <input required id="detalle" name="detalle" class="form-control" type="text" placeholder="detalle...">
+                                            <input required id="detalle" name="detalle" class="form-control" type="text" placeholder="">
                                         </div>
                                     </div>
 
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="zona">zona:</label>
-                                            <input required id="zona" name="zona" class="form-control" type="text" placeholder=" zona...">
+                                            <input required id="zona" name="zona" class="form-control" type="text" placeholder="">
                                         </div>
                                     </div>
                                 </div>
@@ -83,7 +83,7 @@ $listaRutas = $controladorRuta->listarRutas();
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="Km_estimado">Km estimado:</label>
-                                            <input required id="km_estimado" name="km_estimado" class="form-control" type="text" placeholder="Km estimado...">
+                                            <input required id="km_estimado" name="km_estimado" class="form-control" type="text" placeholder="">
                                         </div>
                                     </div>
                                 </div>
